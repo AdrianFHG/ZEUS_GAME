@@ -5,6 +5,7 @@
 #include <stdlib.h>
 
 #include "raylib.h"
+#include "textures.h"
 
 
 Rectangle rect[3] = {{250,200,100,100},
@@ -19,17 +20,16 @@ int main() {
 
     srand(time(NULL));
     
-
-    
-    InitWindow(800, 600, "Zeus");
+    InitWindow(1200, 600, "Zeus");
     SetTargetFPS(60);
 
-    
+    LoadAllTextures();
 
     while(!WindowShouldClose()){
         BeginDrawing();
         
-       ClearBackground(RAYWHITE);
+       ClearBackground(BLACK);
+       DrawBackground();
         
        for(int i = 0; i<3;i++){ 
         DrawRectangleRec(rect[i],RAYWHITE);
@@ -61,7 +61,7 @@ int main() {
         EndDrawing();
     }
     
-   
+    UnloadAllTextures();
     CloseWindow();
     return 0;
 }
