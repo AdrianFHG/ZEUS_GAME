@@ -19,14 +19,17 @@ int main() {
 
     srand(time(NULL));
     
+
+    
     InitWindow(800, 600, "Zeus");
     SetTargetFPS(60);
+
+    
+
     while(!WindowShouldClose()){
         BeginDrawing();
         
-       ClearBackground(GREEN);
-
-      
+       ClearBackground(RAYWHITE);
         
        for(int i = 0; i<3;i++){ 
         DrawRectangleRec(rect[i],RAYWHITE);
