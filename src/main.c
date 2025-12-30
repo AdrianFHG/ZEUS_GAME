@@ -22,6 +22,10 @@ int main() {
        ClearBackground(BLACK);
        DrawBackground();
 
+       //DrawRectangleRec(board,BLACK);
+       DrawRectangleRoundedLines(board,0.3f,16,BLACK);
+       DrawRectangleRec(spin,WHITE);
+
        
 
 

@@ -4,6 +4,10 @@
 Texture2D bg;
 Texture2D icon[NUMBER_of_TEXTURE];
 
+//RECTANGLE
+Rectangle board = {400,120,660,240};
+Rectangle spin = {600,420,270,90};
+
 void LoadAllTextures(){
     bg = LoadTexture("assets\\background.jpg");
 

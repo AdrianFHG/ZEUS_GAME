@@ -8,6 +8,9 @@
 extern Texture2D bg;
 extern Texture2D icon[NUMBER_of_TEXTURE];
 
+extern Rectangle board;
+extern Rectangle spin;
+
 void LoadAllTextures();
 void UnloadAllTextures();
 
