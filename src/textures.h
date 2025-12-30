@@ -3,7 +3,7 @@
 
 #include <raylib.h>
 
-#define NUMBER_of_TEXTURE 7
+#define NUMBER_of_TEXTURE 6
 
 extern Texture2D bg;
 extern Texture2D icon[NUMBER_of_TEXTURE];
